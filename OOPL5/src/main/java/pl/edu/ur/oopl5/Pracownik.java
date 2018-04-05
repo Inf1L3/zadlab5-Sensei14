@@ -11,9 +11,9 @@ package pl.edu.ur.oopl5;
  */
 public class Pracownik {
     
-    private String imie;
-    private String nazwisko;
-    private String stanowisko;
+    private final String imie;
+    private final String nazwisko;
+    private final String stanowisko;
     
     
     
@@ -23,5 +23,13 @@ public class Pracownik {
       this.nazwisko = nazwisko;
       this.stanowisko = stanowisko;
   }
+  
+  
+  public void pokazDane()
+     {
+         System.out.println("Imię: "+this.imie);
+         System.out.println("Nazwisko: "+this.nazwisko);
+         System.out.println("Stanowisko:  "+this.stanowisko);
+     }
     
 }
